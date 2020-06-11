@@ -7,26 +7,26 @@ public class CatPlayerCS : MonoBehaviour
     Rigidbody rigid;
     void Start()
     {
-        rigid = GetComponent<Rigodbody>();
+        rigid = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey.KeyCode.UpArrow)) {
+        if (Input.GetKey(KeyCode.UpArrow)) {
             Debug.Log("앞으로~");
             transform.position = new Vector3(
             transform.position.x
             , transform.position.y
-            , transform.position.z + 3f * Time.delaTime
+            , transform.position.z + 3f * Time.deltaTime
             );
         }
-        if (input.GetKay(KeyCode.DownArrow)) {
+        if (Input.GetKey(KeyCode.DownArrow)) {
             Debug.Log("뒤로~");
             transform.position = new Vector3(
             transform.position.x
             , transform.position.y
-            , transform.position.z - 3f * Time.delaTime
+            , transform.position.z - 3f * Time.deltaTime
             );
         }
 
